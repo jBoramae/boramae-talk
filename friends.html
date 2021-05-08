@@ -3,14 +3,14 @@
   <head>
     <link rel="stylesheet" href="css/styles.css " />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Friends - Boramae Talk.</title>
   </head>
 
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span>서비스 제한</span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
@@ -24,7 +24,7 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">친구</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i> </span>
@@ -33,7 +33,7 @@
     </header>
 
     <a class="friends-display-link"
-      ><i class="fas fa-info-circle"></i> Friend's Names Display
+      ><i class="fas fa-info-circle"></i> 친구의 이름 표시하기
       <i class="fas fa-chevron-right fa-xs"></i>
     </a>
 
@@ -52,7 +52,7 @@
 
       <div class="friends-screen__channel">
         <div class="friends-screen__channel-header">
-          <span>Channel</span>
+          <span>채널</span>
           <i class="fas fa-chevron-up fa-xs"></i>
         </div>
         <div class="user-component">
@@ -61,13 +61,36 @@
               class="user-component__avatar user-component__avatar--sm"
             ></img>
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+              <h4 class="user-component__title user-component__title--not-bold">채널</h4>
             </div>
           </div>
           <div class="user-component__column">
            <div>
             <span>2 </span>
             <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>친구 1</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTEuOTA5IDUxMS45MDkiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTExLjkwOSA1MTEuOTA5IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGlkPSJYTUxJRF8yMDc3XyI+PGcgaWQ9IlhNTElEXzE4MjlfIj48ZyBpZD0iWE1MSURfMTc1N18iPjxwYXRoIGlkPSJYTUxJRF84NTBfIiBkPSJtMzgyLjMxNSA0MzQuODQ4di0xNmgxNmMyMi42NDQgMCA0MSAxOC4zNTYgNDEgNDF2MTZoLTE2Yy0yMi42NDMgMC00MS0xOC4zNTYtNDEtNDF6IiBmaWxsPSIjODlkZjhmIi8+PC9nPjxnIGlkPSJYTUxJRF8xODMyXyI+PGcgaWQ9IlhNTElEXzE3MDNfIj48cGF0aCBpZD0iWE1MSURfODQ5XyIgZD0ibTM0Mi4zMzQgNTcuNDYxLTI5NS4zMjUgMjk1LjMzNmMtOC43NTcgOC43NTctMi41NTUgMjMuNzMgOS44MjkgMjMuNzNsMjIyLjU2Ny4wMDNjMTA0LjUzMi4wMDEgMTg5LjI3My04NC43MzggMTg5LjI3My0xODkuMjd2LTc3LjQ2N2MwLTQwLjg3NS0zMy4xMzUtNzQuMDEtNzQuMDEtNzQuMDEtMTkuNjI5IDAtMzguNDU0IDcuNzk4LTUyLjMzNCAyMS42Nzh6IiBmaWxsPSIjZmZjZDY5Ii8+PC9nPjwvZz48ZyBpZD0iWE1MSURfMTM4OV8iPjxwYXRoIGlkPSJYTUxJRF84NDNfIiBkPSJtMTAgNDU3Ljk0N2MyNC43NDIgMjQuNDQgNjQuNTc0IDI0LjMxOCA4OS4xNjUtLjI3NGwyMDAuNzU2LTIwMC43NTYtNDQuNDQ2LTQ0LjQ0NnoiIGZpbGw9IiNmZjdkOTciLz48L2c+PGcgaWQ9IlhNTElEXzEzMzJfIj48cGF0aCBkPSJtMjMuMzQgMzc2LjQ1OWM3OS43NjQgNDUuNDk2IDE4MC4zMjQgMzEuNzk4IDI0NS4yNTUtMzMuMTMzIDU4LjU3Ni01OC41NzYgNTguNzk2LTE1My43NjYuMjIxLTIxMi4zNDJ6IiBmaWxsPSIjODBiNmZmIi8+PC9nPjxnIGlkPSJYTUxJRF8xNzUyXyI+PHBhdGggaWQ9IlhNTElEXzExNl8iIGQ9Im01MS41NTcgMzQ3LjkxNWM1Ni43MjggMy4zMTcgMTEzLjg2NC0xNy4xNDkgMTU2LjA1Mi01OS4zMzdsLjQ0MS0uNDQxYzM3LjIyNS0zNy4yMjUgNTAuNzkzLTg5LjE0OCA0MC43MDUtMTM3LjA4N3oiIGZpbGw9IiNhMGM4ZmYiLz48L2c+PC9nPjxnIGlkPSJYTUxJRF8xMjZfIj48cGF0aCBpZD0iWE1MSURfMjcwXyIgZD0ibTQwMC45MTUgMTEwLjk5Yy0xLjg3IDEuODU5LTIuOTMgNC40MzktMi45MyA3LjA2OSAwIDIuNjMxIDEuMDU5IDUuMjEgMi45MyA3LjA3IDEuODU5IDEuODYgNC40MzkgMi45MyA3LjA3IDIuOTMgMi42MyAwIDUuMTk5LTEuMDY5IDcuMDY5LTIuOTMgMS44Ni0xLjg2IDIuOTMxLTQuNDM5IDIuOTMxLTcuMDcgMC0yLjYzLTEuMDctNS4yMS0yLjkzMS03LjA2OS0xLjg1OS0xLjg2LTQuNDM5LTIuOTMxLTcuMDY5LTIuOTMxLTIuNjMxIDAtNS4yMTEgMS4wNzEtNy4wNyAyLjkzMXoiLz48cGF0aCBpZD0iWE1MSURfODIyXyIgZD0ibTUwMS45MDkgMzY2LjUzaC0xMzUuNDIyYzE3LjM3OC04LjQ1IDMzLjU4Ni0xOS40NTcgNDguMDc1LTMyLjgzNyA0LjA1OC0zLjc0NyA0LjMxLTEwLjA3My41NjItMTQuMTMxLTMuNzQ2LTQuMDU4LTEwLjA3NC00LjMxLTE0LjEzMS0uNTYyLTMzLjE5MyAzMC42NTEtNzYuMzc0IDQ3LjUzMS0xMjEuNTg4IDQ3LjUzaC0yMS44NGM2LjI3Ny00Ljk5MyAxMi4zMjgtMTAuMzYyIDE4LjA5OS0xNi4xMzMgMzAuMjI5LTMwLjIyOSA0Ni45MS03MC40NCA0Ni45NzItMTEzLjIyOS4wNTYtMzkuNDY2LTE0LjA0OS03Ni43MTItMzkuOTAyLTEwNS45NTdsNjYuNjcxLTY2LjY4YzEyLjA5LTEyLjA5MSAyOC4xNjUtMTguNzQ5IDQ1LjI2My0xOC43NDkgMzUuMjk2IDAgNjQuMDExIDI4LjcxNSA2NC4wMTEgNjQuMDF2NzcuNDY3YzAgMjEuMDY2LTMuNjE3IDQxLjY4OS0xMC43NSA2MS4yOTUtMS44ODggNS4xOS43ODggMTAuOTI4IDUuOTc4IDEyLjgxNiAxLjEyOS40MSAyLjI4My42MDUgMy40MTguNjA1IDQuMDg1IDAgNy45MjEtMi41MjIgOS4zOTgtNi41ODQgNy45MzMtMjEuODA1IDExLjk1NS00NC43MjcgMTEuOTU1LTY4LjEzM3YtNDIuMzMzaDIzLjIyOWM0LjA0NSAwIDcuNjkxLTIuNDM3IDkuMjM5LTYuMTczIDEuNTQ3LTMuNzM3LjY5MS04LjAzOC0yLjE2OC0xMC44OThsLTMxLjM2NS0zMS4zNjVjLTYuMzk2LTQwLjAyMy00MS4xNTEtNzAuNzA4LTgyLjk0Ny03MC43MDgtMjIuNDQgMC00My41MzcgOC43MzktNTkuNDA1IDI0LjYwN2wtMzE4Ljk5MyAzMTljLTIuMjA1IDIuMjA1LTMuMjU1IDUuMzEyLTIuODQgOC40MDIuNDE1IDMuMDkxIDIuMjQ4IDUuODExIDQuOTU3IDcuMzU1IDExLjE1MiA2LjM2MSAyMi43MSAxMS41ODkgMzQuNTE3IDE1Ljc1OWwtNDkuOTczIDQ5Ljk3MmMtMS44ODMgMS44ODMtMi45MzggNC40NC0yLjkyOSA3LjEwMi4wMDggMi42NjMgMS4wNzggNS4yMTMgMi45NzMgNy4wODQgMTQuMjIxIDE0LjA0OCAzMi44NDcgMjEuMDY0IDUxLjQ3IDIxLjA2NCAxOC43NzQgMCAzNy41NDUtNy4xMzIgNTEuNzkzLTIxLjM4MWw1NC45MTYtNTQuOTE2YzIzLjA4MS00LjA0NSA0NS41MzUtMTEuODU4IDY2LjM2MS0yMy4yOTloMTA4LjM0MWwzNi40NiAzNi40NnYxMS44NTdjMCAyOC4xMjEgMjIuODc5IDUxIDUxIDUxaDE2YzUuNTIyIDAgMTAtNC40NzggMTAtMTB2LTE2YzAtMjguMTIxLTIyLjg3OS01MS01MS01MWgtMTEuODU4bC0yMi4zMTYtMjIuMzE3aDEzNy43NjljNS41MjIgMCAxMC00LjQ3NyAxMC0xMCAwLTUuNTIyLTQuNDc4LTEwLTEwLTEwem0tMzAxLjE1Mi04NS4yNDRjLTMzLjUyNiAzMy41MjctNzcuOTY2IDUzLjQ3MS0xMjQuNjQ3IDU2LjU0NGwxNjUuNTI2LTE2NS41MjVjMi44MjQgNDAuMjI3LTExLjc4NiA3OS44ODgtNDAuODc5IDEwOC45ODF6bS0xNDQuOTI4IDc2LjgyNWMyLjUyOS4wOSA1LjA1NS4xNTEgNy41NzguMTUxIDU2LjU0OCAwIDExMS4xOC0yMi41MjEgMTUxLjQ5Mi02Mi44MzMgMzcuMjE5LTM3LjIxOSA1My43MDEtODkuNTkgNDQuNjczLTE0MS4wNmw4Ljk5NS04Ljk5NWMyMi4wOSAyNS40MzYgMzQuMTE5IDU3LjY1NSAzNC4wNyA5MS43NjYtLjA1NSAzNy40NTctMTQuNjU1IDcyLjY1Ni00MS4xMTQgOTkuMTE1LTU4LjU1MSA1OC41NS0xNDcuOTE1IDczLjIwNS0yMjEuNTE1IDM3LjY3N3ptMzYuMjY1IDkyLjQ5MWMtMTguMiAxOC4yMDItNDYuNTQ5IDIwLjQyOS02Ny4yMyA2LjYyM2w0OS44OTUtNDkuODk1YzE2LjIxIDMuODMxIDMyLjcyMSA1Ljc0NSA0OS4xOTMgNS43NDUgMS45MTkgMCAzLjgzNi0uMDMyIDUuNzUzLS4wODN6bTMzNy4yMjEgOS4yNDZ2NmgtNmMtMTcuMDk0IDAtMzEtMTMuOTA2LTMxLTMxdi02aDZjMTcuMDk0IDAgMzEgMTMuOTA2IDMxIDMxeiIvPjxwYXRoIGlkPSJYTUxJRF84NDRfIiBkPSJtNDI5LjkyNCAyODUuMDVjLTEuODYgMS44Ni0yLjkzIDQuNDQtMi45MyA3LjA3czEuMDY5IDUuMjEgMi45MyA3LjA3YzEuODYgMS44NTkgNC40NCAyLjkzIDcuMDcgMi45M3M1LjIxLTEuMDcgNy4wNjktMi45M2MxLjg2LTEuODYgMi45MzEtNC40NCAyLjkzMS03LjA3cy0xLjA3LTUuMjEtMi45MzEtNy4wN2MtMS44NTktMS44NTktNC40My0yLjkzLTcuMDY5LTIuOTMtMi42MjkgMC01LjIwOSAxLjA3LTcuMDcgMi45M3oiLz48L2c+PC9nPjwvc3ZnPg=="
+              class="user-component__avatar user-component__avatar--sm"
+            ></img>
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">딱따구리</h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+           <div>
+            <span></span>
+
           </div>
           </div>
         </div>
