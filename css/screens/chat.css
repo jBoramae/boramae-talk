@@ -167,7 +167,7 @@
 .reply__column:last-child button {
   position: absolute;
   right: 3px;
-  top: 4px;
+  top: 5px;
 }
 
 .reply__column:last-child > i {
@@ -190,8 +190,9 @@
 }
 
 .reply__column:first-child,
-.fa-laugh {
-  transition: opacity 0.4s ease-in-out;
+.fa-laugh,
+.reply__column button {
+  transition: opacity 0.5s ease-in-out;
 }
 
 .reply:focus-within .reply__column:first-child,
