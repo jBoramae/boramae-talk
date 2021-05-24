@@ -7,13 +7,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Welcome to Boramae Talk.</title>
   </head>
 
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>서비스 제한</span>
+        <span>No Service</span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
@@ -35,14 +40,10 @@
     </header>
 
     <form action="friends.html" method="GET" class="login-form">
-      <input
-        name="username"
-        type="text"
-        placeholder="메일 주소 혹은 핸드폰 번호"
-      />
-      <input name="password" type="password" placeholder="비밀번호" />
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
-      <a href="#">계정 이름 혹은 비밀번호를 잊으셨나요?</a>
+      <a href="#">Find Boramae Account or Password</a>
     </form>
 
     <div class="no-mobile">
